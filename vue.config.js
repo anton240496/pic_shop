@@ -1,9 +1,8 @@
 const { defineConfig } = require('@vue/cli-service')
 
 module.exports = defineConfig({
-  // publicPath: process.env.NODE_ENV === 'production' ? '/pic_shop/' : '/',  // 👈 ПОЛНОСТЬЮ УДАЛИТЕ ЭТУ СТРОКУ
-  // publicPath: '',  // 👈 ТОЖЕ УДАЛИТЕ
-  // assetsDir: 'static',  // 👈 УДАЛИТЕ ЭТУ СТРОКУ
+  // 👇 Главное: относительные пути для локального открытия
+  publicPath: './',  // 👈 ЭТО ВСЁ МЕНЯЕТ!
 
   outputDir: 'dist',
   lintOnSave: false,
